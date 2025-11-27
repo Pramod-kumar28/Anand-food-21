@@ -225,7 +225,7 @@ const Home = () => {
 
       {/* Our Story Section */}
       <section className="section-padding bg-white px-4">
-        <div className="container px-4">
+        <div className="container-custom px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <div className="inline-flex items-center bg-primary-100 text-primary-700 rounded-full px-4 py-2 mb-4">
