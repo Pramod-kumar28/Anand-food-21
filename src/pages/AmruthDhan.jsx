@@ -1,8 +1,10 @@
 import React from 'react';
 import { amruthDhanProducts } from '../data/products';
 import ProductCard from '../components/ProductCard';
+import { useNavigate } from 'react-router-dom';
 
 const AmruthDhan = () => {
+  const navigate=useNavigate();
   const processSteps = [
     {
       step: 1,
@@ -302,7 +304,7 @@ const AmruthDhan = () => {
               <p className="text-gray-600 mb-4">
                 Join thousands of families who have made the switch to pure, unadulterated dairy
               </p>
-              <button className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-base">
+              <button className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-base" onClick={()=>navigate('#')}>
                 Start Your Order Today
               </button>
             </div>

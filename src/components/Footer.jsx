@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: "fas fa-map-marker-alt", text: "123 Food Street, Anand Nagar, Mumbai, Maharashtra - 400001" },
+    { icon: "fas fa-map-marker-alt", text: "H.No. 131/A, 2nd Floor, MLA Colony, Beside Vamsiram Banjara Abodes, Road No.12, Lane 14, Banjara Hills, Hyderabad-500034." },
     { icon: "fas fa-phone", text: "+91 98765 43210" },
     { icon: "fas fa-envelope", text: "info@anandfoods.com" },
     { icon: "fas fa-clock", text: "Mon - Sun: 7:00 AM - 10:00 PM" }
