@@ -10,7 +10,7 @@ const Home = () => {
     {
       id: 1,
       name: "Priya Sharma",
-      location: "Mumbai",
+      location: "Hyderabad",
       text: "AmruthDhan milk brought back the taste of my childhood. Pure, creamy, and absolutely natural!",
       rating: 5,
       avatar: "PS"
@@ -18,7 +18,7 @@ const Home = () => {
     {
       id: 2,
       name: "Rajesh Kumar",
-      location: "Delhi",
+      location: "Kurnool",
       text: "FamAdda's regional delicacies are incredible! The Kolkata Rosogolla tastes exactly like I had in my last visit.",
       rating: 5,
       avatar: "RK"
@@ -123,7 +123,7 @@ const regions = [
               
               <p className="text-lg lg:text-xl mb-8 text-primary-100 leading-relaxed">
                 Where <span className="font-semibold text-white">purity meets tradition</span>. Experience the gold standard of 
-                pure buffalo milk with AmruthDhan and discover India's rich culinary heritage with FamAdda - 
+                pure buffalo milk with AmruthDhan and discover India's rich culinary heritage with FamAdda
                 delivered with love to your doorstep.
               </p>
               
@@ -247,18 +247,18 @@ const regions = [
         <div className="mb-4">
           <h3 className="text-lg font-semibold text-primary-600 mb-2">AmruthDhan</h3>
           <p className="text-gray-600 leading-relaxed">
-            AmruthDhan is our commitment to purity in every drop. We source directly from trusted farms, 
-            ensuring our buffalo milk reaches your table exactly as nature intended rich, chemical-free, 
-            and unadulterated. Each batch is tested for quality and nutritional value.
+            AmruthDhan is our commitment to purity in every drop. 
+            <span className="text-primary-600 font-semibold">Milk is not just another product it is part of every family’s daily life. AmruthDhan ensures that what reaches your home is pure, safe, and exactly as nature </span>
+             intended. We source directly from trusted farms, ensuring our buffalo milk reaches your table exactly as nature intended rich, chemical-free, and unadulterated.
           </p>
         </div>
         
         <div className="mb-6">
-          <h3 className="text-lg font-semibold text-secondary-600 mb-2">FamAdda</h3>
+          <h3 className="text-lg font-semibold text-secondary-500 mb-2">FamAdda</h3>
           <p className="text-gray-600 leading-relaxed">
-            FamAdda celebrates India's diverse culinary heritage by bringing authentic regional specialties 
-            to your home. From Athreyapuram Putharekulu to Bikaneri Bhujia, we partner with local artisans 
-            to preserve traditional recipes and support sustainable food ecosystems across the country.
+            FamAdda celebrates India's diverse culinary heritage by bringing authentic regional specialties to your home. 
+            <span className="text-primary-500 font-semibold">We ensure that what you receive in your city tastes exactly as it does in the hometown where it was born. Same recipe. Same craftsmanship. Same heritage. </span>
+            From Athreyapuram Putharekulu to Bikaneri Bhujia, we partner with local artisans to preserve traditional recipes, delivering each delicacy with care, quality, and authenticity.
           </p>
         </div>
         

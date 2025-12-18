@@ -173,7 +173,7 @@ const About = () => {
   return (
     <div className="overflow-hidden pt-20">
       {/* Hero Section with enhanced animation */}
-      <section className="text-white py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
+      <section className="text-white h-[55vh] py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
         
         
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -233,17 +233,18 @@ const About = () => {
         <span className="text-xs font-semibold">Our Promise</span>
       </div>
       
-      <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-8 fade-in">
+      <h2 className="text-2xl lg:text-4xl font-bold text-primary-800 mb-8 fade-in">
         Our Commitment to Purity & Authenticity
       </h2>
       
       <div className="bg-gradient-to-br from-white to-amber-50 rounded-2xl p-8 shadow-xl border-l-4 border-primary-500 transform hover:scale-105 transition-transform duration-300">
         <div className="mb-6">
-          <p className="text-lg text-gray-700 leading-relaxed mb-6 fade-in">
+          <h1 className='font-semibold text-primary-500 text-lg'>AmruthDhan</h1>
+          <p className="text-lg text-left text-gray-700 leading-relaxed mb-6 fade-in">
             Milk is not just another product it is part of every family's daily life. 
             <span className="font-semibold text-primary-600"> AmruthDhan ensures that what reaches your home is pure, safe, and exactly as nature intended.</span>
           </p>
-          
+          <h1 className='font-semibold text-primary-500 text-lg'>FamAdda</h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6 fade-in">
             For regional specialties, <span className="font-semibold text-blue-600">FamAdda ensures that what you receive in your city tastes exactly as it does in the hometown where it was born.</span> 
             Same recipe. Same craftsmanship. Same heritage. Delivered with care, quality, and authenticity.
@@ -287,7 +288,7 @@ const About = () => {
               </div>
               <p className="text-gray-700 leading-relaxed mb-6">
                 100% pure buffalo milk sourced from trusted dairy farms, delivered fresh to your home. 
-                No additives, no compromise, no shortcuts - just pure, natural milk as nature intended.
+                No additives, no compromise, no shortcuts just pure, natural milk as nature intended.
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center">
@@ -296,7 +297,7 @@ const About = () => {
                 </li>
                 <li className="flex items-center">
                   <i className="fas fa-check-circle text-green-500 mr-3"></i>
-                  <span>Farm-to-home freshness guaranteed</span>
+                  <span>Farm to home freshness guaranteed</span>
                 </li>
                 <li className="flex items-center">
                   <i className="fas fa-check-circle text-green-500 mr-3"></i>
@@ -312,7 +313,7 @@ const About = () => {
                   <i className="fas fa-utensils text-white text-2xl"></i>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-amber-800">FamAdda</h3>
+                  <h3 className="text-2xl font-bold text-amber-700">FamAdda</h3>
                   <p className="text-amber-600 font-medium">India's Regional Flavours, Preserved to Perfection</p>
                 </div>
               </div>

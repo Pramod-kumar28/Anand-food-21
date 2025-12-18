@@ -33,9 +33,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50 mt-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+      <section className="bg-gradient-to-r h-[55vh] from-primary-600 to-primary-800 text-white">
         <div className="container-custom section-padding">
-          <div className="max-w-4xl mx-auto text-center animate-slide-up">
+          <div className="max-w-4xl mx-auto text-center animate-slide-up md:pt-10">
             <h1 className="text-2xl lg:text-4xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl text-primary-100">
               Get in Touch with Anand Foods

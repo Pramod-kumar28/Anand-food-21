@@ -25,7 +25,7 @@ const FamAdda = () => {
     {
       icon: "👨‍🍳",
       title: "Original Creators",
-      description: "No replicas or alternatives - only authentic products from their original makers"
+      description: "No replicas or alternatives only authentic products from their original makers"
     },
     {
       icon: "📦",
@@ -35,20 +35,20 @@ const FamAdda = () => {
     {
       icon: "🎯",
       title: "Curated Selection",
-      description: "Handpicked specialties from across India, taste-tested for quality and authenticity"
+      description: "Handpicked specialties from across India, taste tested for quality and authenticity"
     }
   ];
 
   const testimonials = [
     {
       name: "Priya Sharma",
-      location: "Delhi",
+      location: "Hyderabad",
       text: "FamAdda brought the authentic taste of Kolkata's mishti to our home in Delhi. The rosogollas were as fresh as if we bought them directly from the shop in Kolkata.",
       rating: 5
     },
     {
       name: "Rajesh Kumar",
-      location: "Mumbai",
+      location: "Kurnool",
       text: "As someone who values traditional foods, I appreciate how FamAdda preserves authentic recipes. The Rajasthani namkeens taste exactly like what I enjoyed in Jaipur.",
       rating: 5
     },
@@ -139,9 +139,9 @@ const FamAdda = () => {
                 <h3 className="text-xl font-bold mb-4 text-center">Featured Regions</h3>
                 <div className="grid grid-cols-2 gap-3">
                   {[
-                    { name: "West Bengal", icon: "🎭", specialty: "Mishti & Sweets", color: "from-red-400 to-red-600" },
+                    { name: "West Bengal", icon: "🎭", specialty: "Mishti & Sweets", color: "from-blue-400 to-blue-600" },
                     { name: "Rajasthan", icon: "🏜️", specialty: "Namkeens & Snacks", color: "from-orange-400 to-orange-600" },
-                    { name: "Andhra Pradesh", icon: "🌶️", specialty: "Spicy Specialties", color: "from-green-400 to-green-600" },
+                    { name: "Andhra & Telangana", icon: "🌶️", specialty: "Spicy Specialties", color: "from-green-400 to-green-600" },
                     { name: "Maharashtra", icon: "🎯", specialty: "Chivda & Farsan", color: "from-blue-400 to-blue-600" },
                     { name: "Tamil Nadu", icon: "☕", specialty: "Murukku & Snacks", color: "from-purple-400 to-purple-600" },
                     { name: "Kerala", icon: "🥥", specialty: "Banana Chips", color: "from-teal-400 to-teal-600" }
@@ -181,7 +181,7 @@ const FamAdda = () => {
                 specialty: "Legendary Sweets",
                 description: "Rosogolla, Sandesh, Mishti Doi from iconic sweet shops of Kolkata",
                 image: "🎭",
-                color: "bg-red-50 border-red-200"
+                color: "bg-purple-50 border-purple-200"
               },
               {
                 region: "Rajasthan",
