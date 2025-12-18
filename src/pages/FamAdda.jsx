@@ -79,12 +79,7 @@ const FamAdda = () => {
             <p className="text-lg lg:text-xl mb-6 text-blue-100">
               India's Regional Flavours, Preserved to Perfection
             </p>
-            {/* <p className="text-lg text-blue-200 leading-relaxed max-w-3xl mx-auto">
-              A celebration of India's culinary heritage. Every region of our country carries a 
-              unique food culture, perfected over generations. FamAdda brings these authentic 
-              regional delicacies directly to your doorstep, ensuring you experience the true 
-              flavour, tradition, and craftsmanship of each state.
-            </p> */}
+
             
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg text-sm">
@@ -99,9 +94,15 @@ const FamAdda = () => {
       <section className="py-16 bg-gradient-to-br from-blue-50 to-blue-100 px-4">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-3">How FamAdda Delivers Authenticity</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We ensure that what you receive tastes exactly as it does in its hometown
+            <h2 className="text-3xl font-bold text-gray-800 mb-3">FamAdda Delivers Authenticity</h2>
+            <p className="text-lg text-gray-600 max-w-5xl mx-auto">
+              FamAdda is a unique food concept that brings together India’s most iconic tastes from every
+              corner of the country all in one place. Whether it’s the timeless sweets of West Bengal, the
+              royal namkeens inspired by the flavours of Rajasthan, the bold and fiery snacks born in Andhra
+              Pradesh and Telangana, the beloved classics from Maharashtra, the traditional delicacies of
+              Tamil Nadu, or the handcrafted treats from the hills of Himachal Pradesh and Uttarakhand,
+              FamAdda curates the nation’s finest regional specialties with authenticity and pride.
+              
             </p>
           </div>
 
@@ -166,7 +167,11 @@ const FamAdda = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-3">Culinary Journey Across India</h2>
-            <p className="text-lg text-gray-600">Discover the rich tapestry of flavors from every corner of India</p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              FamAdda isn’t just a marketplace it’s a celebration of India’s food heritage, bringing
+              legendary sweets, snacks, namkeens, savories, and traditional delicacies from across all
+              regions and states straight to your table with the same authenticity they are known for
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

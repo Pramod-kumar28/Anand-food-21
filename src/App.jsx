@@ -15,9 +15,11 @@ import SignUp from './pages/SignUp';
 import Checkout from './pages/Checkout';
 import OrderConfirmation from './pages/OrderConfirmation';
 import ScrollToTop from './components/ScrollToTop';
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
   return (
+    <AuthProvider>
     <CartProvider>
       <Router>
         <div className="App min-h-screen flex flex-col">
@@ -42,6 +44,7 @@ function App() {
         </div>
       </Router>
     </CartProvider>
+    </AuthProvider>
   );
 }
 

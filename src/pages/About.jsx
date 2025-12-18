@@ -224,24 +224,44 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission Statement with enhanced animation */}
-      <section className="py-6 bg-gradient-to-br from-amber-50 to-green-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-4xl font-bold text-blue-800 mb-8 fade-in">Our Commitment</h2>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-amber-500 transform hover:scale-105 transition-transform duration-300">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6 fade-in">
-                "At Anand Foods, we are committed to restoring purity in a world where adulteration has become increasingly common. 
-                We believe that every family deserves access to pure buffalo milk and authentic regional delicacies, exactly as nature intended. 
-                Our mission goes beyond business - it's about preserving India's rich culinary heritage while ensuring the highest standards of quality and safety."
-              </p>
-              <div className="text-amber-500 font-semibold fade-in animation-delay-500">
-                — Anand, Founder & Chairman
-              </div>
+{/* Mission Statement with enhanced animation */}
+<section className="py-16 bg-gradient-to-br from-primary-50 to-amber-50 px-4 fade-in">
+  <div className="container-custom">
+    <div className="max-w-4xl mx-auto text-center">
+      <div className="inline-flex items-center bg-primary-100 text-primary-700 rounded-full px-3 py-1 mb-4">
+        <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-1.5"></span>
+        <span className="text-xs font-semibold">Our Promise</span>
+      </div>
+      
+      <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-8 fade-in">
+        Our Commitment to Purity & Authenticity
+      </h2>
+      
+      <div className="bg-gradient-to-br from-white to-amber-50 rounded-2xl p-8 shadow-xl border-l-4 border-primary-500 transform hover:scale-105 transition-transform duration-300">
+        <div className="mb-6">
+          <p className="text-lg text-gray-700 leading-relaxed mb-6 fade-in">
+            Milk is not just another product it is part of every family's daily life. 
+            <span className="font-semibold text-primary-600"> AmruthDhan ensures that what reaches your home is pure, safe, and exactly as nature intended.</span>
+          </p>
+          
+          <p className="text-lg text-gray-700 leading-relaxed mb-6 fade-in">
+            For regional specialties, <span className="font-semibold text-blue-600">FamAdda ensures that what you receive in your city tastes exactly as it does in the hometown where it was born.</span> 
+            Same recipe. Same craftsmanship. Same heritage. Delivered with care, quality, and authenticity.
+          </p>
+        </div>
+        
+        <div className="pt-6">        
+          <div className="flex items-center justify-center space-x-3 fade-in animation-delay-500">
+            <div>
+              <div className="text-primary-600 font-semibold">Anand, Founder & Chairman</div>
+              <div className="text-gray-500 text-sm">Anand Foods</div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Brands Showcase Section */}
       <section className="py-16 bg-white">
@@ -319,8 +339,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      {/* <StatsSection /> */}
 
       {/* Enhanced Animation Styles */}
       <style jsx>{`
