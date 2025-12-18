@@ -34,61 +34,65 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "10K+", label: "Happy Families", icon: "👨‍👩‍👧‍👦" },
-    { number: "25+", label: "Cities Across India", icon: "🏙️" },
-    { number: "50+", label: "Regional Delicacies", icon: "🍛" },
-    { number: "99%", label: "Purity Guaranteed", icon: "✅" }
+    { number: "10K+", label: "Happy Families", icon: "fas fa-users" },
+    { number: "25+", label: "Cities Across India", icon: "fas fa-city" },
+    { number: "50+", label: "Regional Delicacies", icon: "fas fa-utensils" },
+    { number: "99%", label: "Purity Guaranteed", icon: "fas fa-check-circle" }
   ];
 
   const features = [
     {
-      icon: "🚚",
+      icon: "fas fa-truck",
       title: "Fast Delivery",
       description: "Fresh products delivered to your doorstep within 24 hours"
     },
     {
-      icon: "🔒",
+      icon: "fas fa-shield-alt",
       title: "Quality Assured",
       description: "Every product undergoes 6-stage quality check process"
     },
     {
-      icon: "🌱",
+      icon: "fas fa-tractor",
       title: "Farm Fresh",
       description: "Direct from trusted farms and authentic regional kitchens"
     },
     {
-      icon: "💝",
+      icon: "fas fa-handshake",
       title: "Trusted Source",
       description: "Sourced directly from original creators and certified farms"
     }
   ];
 
-  const regions = [
-    {
-      name: "North India",
-      specialties: ["Punjabi Makki Roti", "Kashmiri Rogan Josh", "UP Basket Chaat"],
-      image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=300&fit=crop",
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      name: "South India",
-      specialties: ["Hyderabadi Biryani", "Filter Coffee", "Dosa & Idli"],
-      image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop",
-      color: "from-green-500 to-blue-500"
-    },
-    {
-      name: "East India",
-      specialties: ["Bengali Rosogolla", "Assam Tea", "Bihar Litti Chokha"],
-      image: "https://images.unsplash.com/photo-1586445441244-8130c91b54f0?w=400&h=300&fit=crop",
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      name: "West India",
-      specialties: ["Gujarati Dhokla", "Maharashtrian Pohe", "Goan Fish Curry"],
-      image: "https://images.unsplash.com/photo-1585937421612-70ca4d8beba5?w=400&h=300&fit=crop",
-      color: "from-yellow-500 to-orange-500"
-    }
-  ];
+const regions = [
+  {
+    name: "North India",
+    specialties: ["Bikaneri Bhujia", "Kashmiri Kahwa Tea", "Bal Mithai (Uttarakhand)", "Patiala Shahi Ladoo", "Amritsari Papad"],
+    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=300&fit=crop",
+    color: "from-orange-500 to-red-500",
+    description: "Authentic snacks, sweets, and teas from Punjab, Rajasthan, Kashmir, Himachal, and Uttarakhand - sourced directly from original makers."
+  },
+  {
+    name: "South India",
+    specialties: ["Mysore Pak", "Filter Coffee Powder", "Kerala Banana Chips", "Athreyapuram Putharekulu", "Mangaluru Buns Mix"],
+    image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop",
+    color: "from-green-500 to-blue-500",
+    description: "Iconic sweets, snacks, and instant mixes from Tamil Nadu, Kerala, Andhra, Telangana, and Karnataka in their original packaged form."
+  },
+  {
+    name: "East India",
+    specialties: ["Bengali Rosogolla (Jar)", "Assam Tea Leaves", "Bihar's Sattu Powder", "Odisha's Chhena Poda", "Silchar Tea"],
+    image: "https://images.unsplash.com/photo-1586445441244-8130c91b54f0?w=400&h=300&fit=crop",
+    color: "from-purple-500 to-pink-500",
+    description: "Premium teas, traditional sweets in jars, and regional flours from Bengal, Assam, Bihar, Odisha, and the Northeast."
+  },
+  {
+    name: "West India",
+    specialties: ["Gujarati Fafda", "Maharashtrian Chivda", "Goan Recheado Masala", "Puran Poli Mix", "Shrewsbury Biscuits (Pune)"],
+    image: "https://images.unsplash.com/photo-1585937421612-70ca4d8beba5?w=400&h=300&fit=crop",
+    color: "from-yellow-500 to-orange-500",
+    description: "Traditional snacks, spice mixes, and biscuits from Maharashtra, Gujarat, Goa, and Madhya Pradesh - shelf-stable and authentic."
+  }
+];
 
   return (
     <div className="min-h-screen mx-auto mt-16">
@@ -192,8 +196,8 @@ const Home = () => {
                     <div className="bg-white rounded-2xl p-2 transform rotate-2 shadow-2xl hover:rotate-0 transition-transform duration-500 group">
                       <div className="relative overflow-hidden rounded-xl">
                         <img 
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGV-rcVlWKSJRaPn-wjngtW8HIHDC-J6UlDA&s" 
-                          alt="Hyderabadi Biryani" 
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPHYUpcpt8TkxKQqqzv2vjG4rNwRGdTEG9vQ&s" 
+                          alt="Putharekulu" 
                           className="w-full h-28 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500" 
                         />
                         <div className="absolute inset-0 bg-secondary-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
@@ -223,58 +227,73 @@ const Home = () => {
       </section>
 
 
-      {/* Our Story Section */}
-      <section className="section-padding bg-white px-4">
-        <div className="container-custom px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <div className="inline-flex items-center bg-primary-100 text-primary-700 rounded-full px-4 py-2 mb-4">
-                <span className="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>
-                <span className="text-sm font-semibold">Our Journey</span>
-              </div>
-              <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-4">
-                The Story Behind <span className="text-primary-600">Anand Foods</span>
-              </h2>
-              <p className="text-gray-600 mb-4 leading-relaxed">
-                Born from a simple belief that every family deserves access to pure, unadulterated food, 
-                Anand Foods began as a mission to restore trust in what we consume daily.
-              </p>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                In a world where finding genuine buffalo milk free from chemicals, mixing, preservatives, 
-                or dilution had become rare, we created <span className="font-semibold text-primary-600">AmruthDhan</span>. And when we saw how 
-                regional culinary treasures were getting lost in commercialization, <span className="font-semibold text-secondary-600">FamAdda</span> was born.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Link to="/about" className="btn-primary text-sm px-6 py-2">
-                  Learn Our Story
-                </Link>
-                <Link to="/contact" className="btn-secondary text-sm px-6 py-2">
-                  Get In Touch
-                </Link>
-              </div>
+{/* Our Story Section */}
+<section className="section-padding bg-white px-4">
+  <div className="container-custom px-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="animate-fade-in">
+        <div className="inline-flex items-center bg-primary-100 text-primary-700 rounded-full px-4 py-2 mb-4">
+          <span className="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>
+          <span className="text-sm font-semibold">Our Journey</span>
+        </div>
+        <h2 className="text-2xl lg:text-4xl font-bold text-gray-800 mb-4">
+          The Story Behind <span className="text-primary-600">Anand Foods</span>
+        </h2>
+        <p className="text-gray-600 mb-4 leading-relaxed">
+          Born from a simple belief that every family deserves access to pure, unadulterated food, 
+          Anand Foods began as a mission to restore trust in what we consume daily.
+        </p>
+        
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold text-primary-600 mb-2">AmruthDhan</h3>
+          <p className="text-gray-600 leading-relaxed">
+            AmruthDhan is our commitment to purity in every drop. We source directly from trusted farms, 
+            ensuring our buffalo milk reaches your table exactly as nature intended rich, chemical-free, 
+            and unadulterated. Each batch is tested for quality and nutritional value.
+          </p>
+        </div>
+        
+        <div className="mb-6">
+          <h3 className="text-lg font-semibold text-secondary-600 mb-2">FamAdda</h3>
+          <p className="text-gray-600 leading-relaxed">
+            FamAdda celebrates India's diverse culinary heritage by bringing authentic regional specialties 
+            to your home. From Athreyapuram Putharekulu to Bikaneri Bhujia, we partner with local artisans 
+            to preserve traditional recipes and support sustainable food ecosystems across the country.
+          </p>
+        </div>
+        
+        <div className="flex flex-wrap gap-3">
+          <Link to="/about" className="btn-primary text-sm px-6 py-2">
+            Learn Our Story
+          </Link>
+          <Link to="/contact" className="btn-secondary text-sm px-6 py-2">
+            Get In Touch
+          </Link>
+        </div>
+      </div>
+      
+      <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl p-6">
+          <img 
+            src="./images/food.png" 
+            alt="Our Farm Story" 
+            className="w-full h-60 object-cover object-top rounded-xl shadow-lg"
+          />
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            <div className="text-center">
+              <div className="text-xl font-bold text-primary-600">2015</div>
+              <div className="text-xs text-gray-600">Founded</div>
             </div>
-            <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl p-6">
-                <img 
-                  src="./images/food.png" 
-                  alt="Our Farm Story" 
-                  className="w-full h-60 object-cover object-top rounded-xl shadow-lg"
-                />
-                <div className="mt-4 grid grid-cols-2 gap-3">
-                  <div className="text-center">
-                    <div className="text-xl font-bold text-primary-600">2015</div>
-                    <div className="text-xs text-gray-600">Founded</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-xl font-bold text-secondary-600">50+</div>
-                    <div className="text-xs text-gray-600">Partner Farms</div>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center">
+              <div className="text-xl font-bold text-secondary-600">50+</div>
+              <div className="text-xs text-gray-600">Partner Farms</div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* AmruthDhan Introduction */}
       <section className="section-padding bg-gradient-to-br from-primary-50 to-white ">
@@ -285,9 +304,11 @@ const Home = () => {
               <span className="text-sm font-semibold">Pure & Natural</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-blue-800 mb-3">AmruthDhan</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              The Gold Standard of Pure Buffalo Milk. In a world where adulteration has become common, 
-              we bring you milk in its most natural form exactly as nature intended.
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              AmruthDhan is the flagship milk division of Anand Foods, created with the vision of restoring
+              purity in a world where adulteration has become increasingly common. Today, finding genuine
+              buffalo milk free from chemicals, mixing, preservatives, or dilution is rare. AmruthDhan fills
+              this gap with a promise built on freshness, transparency, and authenticity
             </p>
           </div>
 
@@ -296,7 +317,7 @@ const Home = () => {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-lg">💧</span>
+                    <i className="fas fa-tint text-primary-600 text-lg"></i>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">100% Pure Buffalo Milk</h3>
@@ -305,7 +326,7 @@ const Home = () => {
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-lg">🔍</span>
+                    <i className="fas fa-search text-primary-600 text-lg"></i>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">Stringent Quality Checks</h3>
@@ -314,7 +335,7 @@ const Home = () => {
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-lg">🚚</span>
+                    <i className="fas fa-truck text-primary-600 text-lg"></i>
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">Farm to Home Freshness</h3>
@@ -359,7 +380,9 @@ const Home = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                  <div className="text-3xl mb-2">{stat.icon}</div>
+                  <div className="text-2xl mb-2">
+                    <i className={`${stat.icon} text-primary-600`}></i>
+                  </div>
                   <div className="text-2xl lg:text-3xl font-bold text-primary-600 mb-1">{stat.number}</div>
                   <div className="text-gray-600 font-medium text-sm">{stat.label}</div>
                 </div>
@@ -378,9 +401,11 @@ const Home = () => {
               <span className="text-sm font-semibold">Authentic Regional Taste</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-3">FamAdda</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              India's Regional Flavours, Preserved to Perfection. Every region carries a unique food culture 
-              perfected over generations. We bring these authentic delicacies directly to your doorstep.
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              FamAdda is a celebration of India’s culinary heritage. Every region of our country carries a
+              unique food culture, perfected over generations. FamAdda brings these authentic regional
+              delicacies directly to your doorstep, ensuring that you experience the true flavour, tradition,
+              and craftsmanship of each state
             </p>
           </div>
 
@@ -434,7 +459,7 @@ const Home = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center group-hover:shadow-lg transition-all duration-300 transform group-hover:scale-105">
-                  <span className="text-xl text-white">{feature.icon}</span>
+                  <i className={`${feature.icon} text-white text-lg`}></i>
                 </div>
                 <h3 className="text-lg font-bold text-gray-800 mb-2">{feature.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
