@@ -124,7 +124,7 @@ const regions = [
               <p className="text-lg lg:text-xl mb-8 text-primary-100 leading-relaxed">
                 Where <span className="font-semibold text-white">purity meets tradition</span>. Experience the gold standard of 
                 pure buffalo milk with AmruthDhan and discover India's rich culinary heritage with Famdda
-                delivered with love to your doorstep.
+                with a touch of local tradition.
               </p>
               
               <div className="flex flex-wrap gap-4 mb-8">
@@ -404,7 +404,7 @@ const regions = [
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Famdda is a celebration of India’s culinary heritage. Every region of our country carries a
               unique food culture, perfected over generations. Famdda brings these authentic regional
-              delicacies directly to your doorstep, ensuring that you experience the true flavour, tradition,
+              delicacies directly from iconic places, ensuring that you experience the true flavour, tradition,
               and craftsmanship of each state
             </p>
           </div>

@@ -173,7 +173,7 @@ const About = () => {
   return (
     <div className="overflow-hidden pt-20">
       {/* Hero Section with enhanced animation */}
-      <section className="text-white h-[55vh] py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
+      {/* <section className="text-white h-[55vh] py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
         
         
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -187,7 +187,87 @@ const About = () => {
             Built on purity, driven by tradition, delivered with love
           </p>
         </div>
-      </section>
+      </section> */}
+
+      {/* Hero Section with responsive design */}
+<section className="text-white min-h-[60vh] md:h-[80vh] flex items-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
+  
+  {/* Simple background elements - Responsive positioning */}
+  <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute -top-6 -left-6 md:-top-10 md:-left-10 w-32 h-32 md:w-40 md:h-40 bg-blue-700 rounded-full opacity-10"></div>
+    <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 w-24 h-24 md:w-32 md:h-32 bg-amber-500 rounded-full opacity-5"></div>
+  </div>
+
+  <div className="container mx-auto px-4 md:px-6 w-full relative z-10 py-12 md:py-20">
+    <div className="max-w-4xl mx-auto text-center">
+      
+      {/* Main heading with responsive spacing */}
+      <div className="mb-4 md:mb-6 fade-in">
+        <div className="text-lg md:text-xl lg:text-2xl text-amber-300 mb-3 md:mb-4 font-sans">
+          {/* <i className="fas fa-wine-bottle mr-2 hidden md:inline-block"></i> */}
+          Pure Goodness in Every Drop & Bite
+          {/* <i className="fas fa-utensils ml-2 hidden md:inline-block"></i> */}
+        </div>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 fade-in">
+          Our Food Journey
+        </h1>
+      </div>
+
+      {/* Description with responsive text size */}
+      <div className="max-w-2xl mx-auto mb-6 md:mb-8 fade-in animation-delay-300">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 md:mb-6 leading-relaxed">
+          Built on purity, driven by tradition, delivered with love
+        </p>
+      </div>
+
+      {/* Brand indicators - Stack on mobile, horizontal on desktop */}
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 md:gap-6 max-w-3xl mx-auto mb-6 md:mb-8 fade-in animation-delay-500">
+        <div className="flex items-center space-x-3 bg-blue-800/40 px-3 py-2 md:px-4 md:py-2 rounded-lg hover:bg-blue-800/60 transition-all duration-300 hover:scale-105 w-full sm:w-auto">
+          <div className="w-7 h-7 md:w-8 md:h-8 bg-blue-500 rounded-full flex items-center justify-center shrink-0">
+            <i className="fas fa-wine-bottle text-white text-xs md:text-sm"></i>
+          </div>
+          <span className="text-xs md:text-sm font-medium">AmruthDhan</span>
+          {/* <i className="fas fa-check-circle text-green-300 text-xs ml-auto sm:ml-0"></i> */}
+        </div>
+        
+        <div className="flex items-center space-x-3 bg-amber-900/30 px-3 py-2 md:px-4 md:py-2 rounded-lg hover:bg-amber-900/50 transition-all duration-300 hover:scale-105 w-full sm:w-auto">
+          <div className="w-7 h-7 md:w-8 md:h-8 bg-amber-500 rounded-full flex items-center justify-center shrink-0">
+            <i className="fas fa-utensils text-white text-xs md:text-sm"></i>
+          </div>
+          <span className="text-xs md:text-sm font-medium">Famdda</span>
+          {/* <i className="fas fa-star text-yellow-300 text-xs ml-auto sm:ml-0"></i> */}
+        </div>
+
+      </div>
+
+      {/* Features - Responsive grid */}
+      <div className="flex items-center justify-center gap-4 md:gap-8 max-w-3xl mx-auto mb-8 md:mb-12 fade-in animation-delay-700">
+        <div className="text-center">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-700/40 flex items-center justify-center mx-auto mb-2">
+            <i className="fas fa-tractor text-amber-300 text-sm md:text-base"></i>
+          </div>
+          <span className="text-xs md:text-sm text-blue-200">Farm Fresh</span>
+        </div>
+        
+        <div className="text-center">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-700/40 flex items-center justify-center mx-auto mb-2">
+            <i className="fas fa-shield-alt text-amber-300 text-sm md:text-base"></i>
+          </div>
+          <span className="text-xs md:text-sm text-blue-200">100% Pure</span>
+        </div>
+ 
+        
+        <div className="text-center">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-700/40 flex items-center justify-center mx-auto mb-2">
+            <i className="fas fa-map-marker-alt text-amber-300 text-sm md:text-base"></i>
+          </div>
+          <span className="text-xs md:text-sm text-blue-200">Pan-India</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* Founder Section */}
       <section className="bg-gray-50">

@@ -635,7 +635,7 @@ const AmruthDhan = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <div className="bg-white rounded-2xl p-6 shadow-lg max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-gray-800 mb-3">Ready to Experience Pure Goodness?</h3>
               <p className="text-gray-600 mb-4">
@@ -645,7 +645,7 @@ const AmruthDhan = () => {
                 Start Your Order Today
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

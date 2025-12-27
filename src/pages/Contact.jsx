@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50 mt-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r h-[55vh] from-primary-600 to-primary-800 text-white">
+      {/* <section className="bg-gradient-to-r h-[55vh] from-primary-600 to-primary-800 text-white">
         <div className="container-custom section-padding">
           <div className="max-w-4xl mx-auto text-center animate-slide-up md:pt-10">
             <h1 className="text-2xl lg:text-4xl font-bold mb-6">Contact Us</h1>
@@ -42,7 +42,71 @@ const Contact = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* Hero Section - Clean Version */}
+<section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white pt-20 md:pt-20">
+  <div className="container-custom px-4 md:px-6 py-6 md:py-6">
+    <div className="max-w-4xl mx-auto">
+
+      {/* Main Content */}
+      <div className="text-center">
+        <div className="mb-6 fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3">
+            Contact <span className="text-amber-300">Us</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-100">
+            Get in Touch with <span className="font-semibold">Anand Foods</span>
+          </p>
+        </div>
+
+        {/* Contact Promo */}
+        <div className="max-w-2xl mx-auto mb-8 fade-in animation-delay-300">
+          <p className="text-lg text-primary-200 leading-relaxed">
+            Have questions about <span className="text-white font-medium">AmruthDhan</span> or 
+            <span className="text-white font-medium"> Famdda</span> products? 
+            Our team is ready to assist you with any inquiries.
+          </p>
+        </div>
+
+        {/* Quick Contact Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto fade-in animation-delay-500">
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/15 transition-all duration-300">
+            <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-3">
+              <i className="fas fa-phone-alt text-white text-lg"></i>
+            </div>
+            <h3 className="font-semibold mb-1">Call Now</h3>
+            <p className="text-sm text-primary-200">+91 98765 43210</p>
+          </div>
+          
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/15 transition-all duration-300">
+            <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-3">
+              <i className="fas fa-envelope text-white text-lg"></i>
+            </div>
+            <h3 className="font-semibold mb-1">Send Email</h3>
+            <p className="text-sm text-primary-200">info@anandgroup.org</p>
+          </div>
+          
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/15 transition-all duration-300">
+            <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+              <i className="fab fa-whatsapp text-white text-lg"></i>
+            </div>
+            <h3 className="font-semibold mb-1">chat</h3>
+            <p className="text-sm text-primary-200">+91 98765 43210</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {/* Simple Wave */}
+  <div className="relative h-16 overflow-hidden">
+    <svg className="absolute bottom-0 w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M1200 0L0 0 0 120 1200 120 1200 0Z" fill="#f9fafb" />
+    </svg>
+  </div>
+</section>
 
       {/* Contact Section */}
       <section className="section-padding">
@@ -90,7 +154,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800 mb-1">Email</h3>
-                    <p className="text-gray-600">info@anandfoods.com<br />support@anandfoods.com</p>
+                    <p className="text-gray-600">info@anandgroup.org</p>
                   </div>
                 </div>
 
