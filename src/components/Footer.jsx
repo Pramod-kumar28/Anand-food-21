@@ -41,7 +41,7 @@ const Footer = () => {
   const contactInfo = [
     { icon: "fas fa-map-marker-alt", text: "H.No. 131/A, 2nd Floor, MLA Colony, Beside Vamsiram Banjara Abodes, Road No.12, Lane 14, Banjara Hills, Hyderabad-500034." },
     { icon: "fas fa-phone", text: "+91 98765 43210" },
-    { icon: "fas fa-envelope", text: "info@anandfoods.com" },
+    { icon: "fas fa-envelope", text: "info@anandgroup.org" },
     { icon: "fas fa-clock", text: "Mon - Sun: 7:00 AM - 10:00 PM" }
   ];
 
@@ -172,7 +172,7 @@ const Footer = () => {
                           className="w-full h-full object-cover object-top"
                         />
                       </div>
-                      <div className="w-12 h-12 flex-shrink-0">
+                      <div className="w-12 h-12 flex-shrink-0 rounded-full overflow-hidden">
                         <img
                           src="/images/logo.png"
                           alt="Anand Foods"
