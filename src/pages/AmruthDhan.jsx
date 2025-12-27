@@ -385,13 +385,13 @@ const AmruthDhan = () => {
       icon: <i className="fas fa-box text-xl"></i>,
       color: "from-orange-500 to-red-500"
     },
-    {
-      step: 6,
-      title: "Fast Delivery",
-      description: "Delivered to your doorstep within 24 hours of milking, ensuring farm-fresh experience.",
-      icon: <i className="fas fa-truck text-xl"></i>,
-      color: "from-primary-500 to-primary-700"
-    }
+    // {
+    //   step: 6,
+    //   title: "Fast Delivery",
+    //   description: "Delivered to your doorstep within 24 hours of milking, ensuring farm-fresh experience.",
+    //   icon: <i className="fas fa-truck text-xl"></i>,
+    //   color: "from-primary-500 to-primary-700"
+    // }
   ];
 
   const benefits = [
@@ -561,10 +561,10 @@ const AmruthDhan = () => {
                     <div className="text-xl font-bold">0%</div>
                     <div className="text-xs text-primary-100">Additives</div>
                   </div>
-                  <div className="bg-white bg-opacity-10 rounded-lg p-3 text-center backdrop-blur-sm">
+                  {/* <div className="bg-white bg-opacity-10 rounded-lg p-3 text-center backdrop-blur-sm">
                     <div className="text-xl font-bold">24h</div>
                     <div className="text-xs text-primary-100">Fresh Delivery</div>
-                  </div>
+                  </div> */}
                   <div className="bg-white bg-opacity-10 rounded-lg p-3 text-center backdrop-blur-sm">
                     <div className="text-xl font-bold">6-Stage</div>
                     <div className="text-xs text-primary-100">Quality Check</div>

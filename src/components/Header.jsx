@@ -86,7 +86,7 @@ const Header = () => {
             </div>
 
             {/* Centered Navigation - Desktop */}
-            <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="hidden md:flex items-end justify-end flex-1">
               <nav className="flex space-x-1">
                 <Link 
                   to="/" 
@@ -109,14 +109,14 @@ const Header = () => {
                   AmruthDhan
                 </Link>
                 <Link 
-                  to="/famadda" 
+                  to="/famdda" 
                   className={`font-medium px-4 py-2 rounded-lg transition-all duration-300 ${
-                    isActive('/famadda') 
+                    isActive('/famdda') 
                       ? 'text-green-800 bg-green-500 bg-opacity-10' 
                       : 'text-gray-700 hover:text-green-600 hover:bg-gray-100'
                   }`}
                 >
-                  FamAdda
+                  Famdda
                 </Link>
                 <Link 
                   to="/about" 
@@ -141,108 +141,7 @@ const Header = () => {
               </nav>
             </div>
 
-            {/* Right Section - Auth & Cart - Desktop */}
-            <div className="hidden md:flex items-center space-x-2 flex-shrink-0">
-              {/* Conditional rendering based on login status */}
-              {isLoggedIn ? (
-                // Logged In: Show User Dropdown
-                <div className="relative" ref={userDropdownRef}>
-                  <button 
-                    onClick={() => setIsUserDropdownOpen(!isUserDropdownOpen)}
-                    className="flex items-center space-x-2 px-3 py-1.5 rounded-lg transition-all duration-300 text-gray-700 hover:text-green-600 hover:bg-gray-100"
-                  >
-                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center relative">
-                      <span className="text-green-600 font-semibold text-sm leading-none">
-                        {user?.firstName?.charAt(0) || 'U'}
-                      </span>
-                    </div>
-                    <span className="font-medium text-sm">
-                      {user?.firstName || 'User'}
-                    </span>
-                    <svg 
-                      className={`w-3.5 h-3.5 transition-transform duration-200 ${isUserDropdownOpen ? 'rotate-180' : ''}`} 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  
-                  {/* User Dropdown Menu */}
-                  {isUserDropdownOpen && (
-                    <div className="absolute right-0 mt-1.5 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
-                      <div className="px-4 py-2 border-b border-gray-100">
-                        <p className="font-semibold text-gray-800 text-sm">{user?.firstName} {user?.lastName}</p>
-                        <p className="text-xs text-gray-500 truncate mt-0.5">{user?.email}</p>
-                      </div>
-                      <Link 
-                        to="/profile" 
-                        className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
-                        onClick={() => setIsUserDropdownOpen(false)}
-                      >
-                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                        My Profile
-                      </Link>
-                      <Link 
-                        to="/orders" 
-                        className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
-                        onClick={() => setIsUserDropdownOpen(false)}
-                      >
-                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                        </svg>
-                        My Orders
-                      </Link>
-                      <button 
-                        onClick={handleLogout}
-                        className="flex items-center w-full px-4 py-2 text-red-600 hover:bg-red-50 transition-colors duration-200 text-sm"
-                      >
-                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                        </svg>
-                        Logout
-                      </button>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                // Not Logged In: Show Login/Signup Buttons
-                <div className="flex items-center space-x-2">
-                  <Link 
-                    to="/login" 
-                    className="font-medium px-4 py-2 rounded-lg transition-all duration-300 text-gray-700 hover:text-green-600 hover:bg-gray-100 text-sm"
-                  >
-                    Login
-                  </Link>
-                  <Link 
-                    to="/signup" 
-                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 text-sm"
-                  >
-                    Sign Up
-                  </Link>
-                </div>
-              )}
-
-              {/* Cart Button */}
-              <div className="relative ml-1">
-                <button 
-                  onClick={() => setIsCartOpen(true)}
-                  className="flex items-center space-x-1 p-2 rounded-lg transition-all duration-300 text-gray-700 hover:text-amber-600 hover:bg-amber-50"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                  {getCartItemsCount() > 0 && (
-                    <span className="absolute -top-1 -right-1 bg-amber-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center animate-bounce">
-                      {getCartItemsCount()}
-                    </span>
-                  )}
-                </button>
-              </div>
-            </div>
+            
 
             {/* Mobile Menu Button & Cart - Very compact for small screens */}
             <div className="md:hidden flex items-center space-x-1 flex-shrink-0">
@@ -260,7 +159,7 @@ const Header = () => {
               )}
 
               {/* Cart Button - Mobile - Very compact */}
-              <div className="relative">
+              {/* <div className="relative">
                 <button 
                   onClick={() => setIsCartOpen(true)}
                   className="flex items-center justify-center p-1 rounded-lg transition-all duration-300 text-gray-700 hover:text-amber-600 hover:bg-amber-50 w-8 h-8"
@@ -274,7 +173,7 @@ const Header = () => {
                     </span>
                   )}
                 </button>
-              </div>
+              </div> */}
 
               {/* Mobile Menu Button - Very compact */}
               <button
@@ -314,15 +213,15 @@ const Header = () => {
                 AmruthDhan
               </Link>
               <Link 
-                to="/famadda" 
+                to="/famdda" 
                 className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 text-xs ${
-                  isActive('/famadda') 
+                  isActive('/famdda') 
                     ? 'text-green-800 bg-green-500 bg-opacity-10' 
                     : 'text-gray-700 hover:text-green-600 hover:bg-gray-100'
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                FamAdda
+                Famdda
               </Link>
               <Link 
                 to="/about" 
@@ -348,7 +247,7 @@ const Header = () => {
               </Link>
               
               {/* Auth Buttons in Mobile Menu */}
-              <div className="pt-1 border-t border-gray-200">
+              {/* <div className="pt-1 border-t border-gray-200">
                 {isLoggedIn ? (
                   <>
                     <div className="px-3 py-2 mb-1 bg-gray-50 rounded-lg">
@@ -400,10 +299,10 @@ const Header = () => {
                     </Link>
                   </div>
                 )}
-              </div>
+              </div> */}
 
               {/* Cart Section in Mobile Menu */}
-              <div className="pt-1 border-t border-gray-200">
+              {/* <div className="pt-1 border-t border-gray-200">
                 <button 
                   onClick={() => {
                     setIsCartOpen(true)
@@ -421,16 +320,128 @@ const Header = () => {
                     </span>
                   )}
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </header>
 
       {/* Cart Sidebar */}
-      <CartSidebar isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+      {/* <CartSidebar isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} /> */}
     </>
   )
 }
 
 export default Header
+
+
+
+
+
+
+
+
+
+
+// {/* Right Section - Auth & Cart - Desktop */}
+//             <div className="hidden md:flex items-center space-x-2 flex-shrink-0">
+//               {/* Conditional rendering based on login status */}
+//               {/* {isLoggedIn ? (
+//                 // Logged In: Show User Dropdown
+//                 <div className="relative" ref={userDropdownRef}>
+//                   <button 
+//                     onClick={() => setIsUserDropdownOpen(!isUserDropdownOpen)}
+//                     className="flex items-center space-x-2 px-3 py-1.5 rounded-lg transition-all duration-300 text-gray-700 hover:text-green-600 hover:bg-gray-100"
+//                   >
+//                     <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center relative">
+//                       <span className="text-green-600 font-semibold text-sm leading-none">
+//                         {user?.firstName?.charAt(0) || 'U'}
+//                       </span>
+//                     </div>
+//                     <span className="font-medium text-sm">
+//                       {user?.firstName || 'User'}
+//                     </span>
+//                     <svg 
+//                       className={`w-3.5 h-3.5 transition-transform duration-200 ${isUserDropdownOpen ? 'rotate-180' : ''}`} 
+//                       fill="none" 
+//                       stroke="currentColor" 
+//                       viewBox="0 0 24 24"
+//                     >
+//                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+//                     </svg>
+//                   </button>
+                  
+                  
+//                   {isUserDropdownOpen && (
+//                     <div className="absolute right-0 mt-1.5 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+//                       <div className="px-4 py-2 border-b border-gray-100">
+//                         <p className="font-semibold text-gray-800 text-sm">{user?.firstName} {user?.lastName}</p>
+//                         <p className="text-xs text-gray-500 truncate mt-0.5">{user?.email}</p>
+//                       </div>
+//                       <Link 
+//                         to="/profile" 
+//                         className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+//                         onClick={() => setIsUserDropdownOpen(false)}
+//                       >
+//                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+//                         </svg>
+//                         My Profile
+//                       </Link>
+//                       <Link 
+//                         to="/orders" 
+//                         className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-200 text-sm"
+//                         onClick={() => setIsUserDropdownOpen(false)}
+//                       >
+//                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+//                         </svg>
+//                         My Orders
+//                       </Link>
+//                       <button 
+//                         onClick={handleLogout}
+//                         className="flex items-center w-full px-4 py-2 text-red-600 hover:bg-red-50 transition-colors duration-200 text-sm"
+//                       >
+//                         <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+//                         </svg>
+//                         Logout
+//                       </button>
+//                     </div>
+//                   )}
+//                 </div>
+//               ) : (
+//                 // Not Logged In: Show Login/Signup Buttons
+//                 <div className="flex items-center space-x-2">
+//                   <Link 
+//                     to="/login" 
+//                     className="font-medium px-4 py-2 rounded-lg transition-all duration-300 text-gray-700 hover:text-green-600 hover:bg-gray-100 text-sm"
+//                   >
+//                     Login
+//                   </Link>
+//                   <Link 
+//                     to="/signup" 
+//                     className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 text-sm"
+//                   >
+//                     Sign Up
+//                   </Link>
+//                 </div>
+//               )} */}
+
+//               {/* Cart Button */}
+//               {/* <div className="relative ml-1">
+//                 <button 
+//                   onClick={() => setIsCartOpen(true)}
+//                   className="flex items-center space-x-1 p-2 rounded-lg transition-all duration-300 text-gray-700 hover:text-amber-600 hover:bg-amber-50"
+//                 >
+//                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+//                   </svg>
+//                   {getCartItemsCount() > 0 && (
+//                     <span className="absolute -top-1 -right-1 bg-amber-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center animate-bounce">
+//                       {getCartItemsCount()}
+//                     </span>
+//                   )}
+//                 </button>
+//               </div> */}
+//             </div>

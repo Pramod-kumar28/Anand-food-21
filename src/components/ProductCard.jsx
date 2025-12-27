@@ -44,7 +44,7 @@ const ProductCard = ({ product, brand }) => {
         
         <div className="flex justify-between items-center">
           <span className="text-2xl font-bold text-gray-900">₹{product.price}</span>
-          <button 
+          {/* <button 
             onClick={handleAddToCart}
             className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center space-x-1"
           >
@@ -52,7 +52,7 @@ const ProductCard = ({ product, brand }) => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg>
             <span>Add</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

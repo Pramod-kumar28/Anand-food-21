@@ -33,7 +33,7 @@ const Footer = () => {
   const quickLinks = [
     { path: "/", label: "Home", icon: "fas fa-home" },
     { path: "/amruthdhan", label: "AmruthDhan", icon: "fas fa-wine-bottle" },
-    { path: "/famadda", label: "FamAdda", icon: "fas fa-utensils" },
+    { path: "/famdda", label: "Famdda", icon: "fas fa-utensils" },
     { path: "/about", label: "About", icon: "fas fa-info-circle" },
     { path: "/contact", label: "Contact", icon: "fas fa-envelope" }
   ];
@@ -163,7 +163,7 @@ const Footer = () => {
               <div className="text-left">
                 <div className="flex flex-col items-start space-y-4">
                   {/* Branding Section */}
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-1">
                       
                       <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-md flex-shrink-0">
@@ -176,12 +176,12 @@ const Footer = () => {
                     </div>
                     <div className="-ml-3">
                       {/* Desktop View */}
-                      <h2 className="hidden lg:block text-md font-bold leading-tight">
+                      <h2 className="hidden lg:block text-lg font-bold leading-tight">
                         <span className="text-amber-400">ANAND</span> 
                         <span className="text-white"> FOODS</span>
                       </h2>
                       {/* Mobile View */}
-                      <h2 className="lg:hidden text-[15px] font-bold leading-tight -pl-2">
+                      <h2 className="lg:hidden text-[20px] font-bold leading-tight -pl-2">
                         <span className="text-amber-400">ANAND</span> 
                         <span className="text-white"> FOODS</span>
                       </h2>

@@ -52,7 +52,7 @@ const Contact = () => {
             <div className="animate-fade-in">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Let's Connect</h2>
               <p className="text-gray-600 mb-8 text-lg">
-                Have questions about our products? Want to know more about AmruthDhan or FamAdda? 
+                Have questions about our products? Want to know more about AmruthDhan or Famdda? 
                 We'd love to hear from you. Reach out to us and we'll get back to you as soon as possible.
               </p>
 
@@ -176,7 +176,7 @@ const Contact = () => {
                       >
                         <option value="">Select a subject</option>
                         <option value="amruthdhan">AmruthDhan Products</option>
-                        <option value="famadda">FamAdda Products</option>
+                        <option value="Famdda">Famdda Products</option>
                         <option value="order">Order Inquiry</option>
                         <option value="quality">Quality Feedback</option>
                         <option value="partnership">Business Partnership</option>

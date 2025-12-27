@@ -43,13 +43,13 @@ const FamAdda = () => {
     {
       name: "Priya Sharma",
       location: "Hyderabad",
-      text: "FamAdda brought the authentic taste of Kolkata's mishti to our home in Delhi. The rosogollas were as fresh as if we bought them directly from the shop in Kolkata.",
+      text: "Famdda brought the authentic taste of Kolkata's mishti to our home in Delhi. The rosogollas were as fresh as if we bought them directly from the shop in Kolkata.",
       rating: 5
     },
     {
       name: "Rajesh Kumar",
       location: "Kurnool",
-      text: "As someone who values traditional foods, I appreciate how FamAdda preserves authentic recipes. The Rajasthani namkeens taste exactly like what I enjoyed in Jaipur.",
+      text: "As someone who values traditional foods, I appreciate how Famdda preserves authentic recipes. The Rajasthani namkeens taste exactly like what I enjoyed in Jaipur.",
       rating: 5
     },
     {
@@ -74,7 +74,7 @@ const FamAdda = () => {
               <span className="text-blue-200 text-sm font-medium">🎉 India's Culinary Heritage Preserved</span>
             </div>
             <h1 className="text-2xl lg:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-              FamAdda
+              Famdda
             </h1>
             <p className="text-lg lg:text-xl mb-6 text-blue-100">
               India's Regional Flavours, Preserved to Perfection
@@ -94,14 +94,14 @@ const FamAdda = () => {
       <section className="py-16 bg-gradient-to-br from-blue-50 to-blue-100 px-4">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-3">FamAdda Delivers Authenticity</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-3">Famdda Delivers Authenticity</h2>
             <p className="text-lg text-gray-600 max-w-5xl mx-auto">
-              FamAdda is a unique food concept that brings together India’s most iconic tastes from every
+              Famdda is a unique food concept that brings together India’s most iconic tastes from every
               corner of the country all in one place. Whether it’s the timeless sweets of West Bengal, the
               royal namkeens inspired by the flavours of Rajasthan, the bold and fiery snacks born in Andhra
               Pradesh and Telangana, the beloved classics from Maharashtra, the traditional delicacies of
               Tamil Nadu, or the handcrafted treats from the hills of Himachal Pradesh and Uttarakhand,
-              FamAdda curates the nation’s finest regional specialties with authenticity and pride.
+              Famdda curates the nation’s finest regional specialties with authenticity and pride.
               
             </p>
           </div>
@@ -168,7 +168,7 @@ const FamAdda = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-3">Culinary Journey Across India</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              FamAdda isn’t just a marketplace it’s a celebration of India’s food heritage, bringing
+              Famdda isn’t just a marketplace it’s a celebration of India’s food heritage, bringing
               legendary sweets, snacks, namkeens, savories, and traditional delicacies from across all
               regions and states straight to your table with the same authenticity they are known for
             </p>
@@ -239,10 +239,10 @@ const FamAdda = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
+              { number: "15+", label: "Indian States" },
               { number: "50+", label: "Iconic Partners" },
-              { number: "25+", label: "Indian States" },
-              { number: "98%", label: "Customer Satisfaction" },
-              { number: "24-48h", label: "Delivery Time" }
+              { number: "200+", label: "Authentic Products" },
+              { number: "100%", label: "Direct Sourcing" }
             ].map((stat, index) => (
               <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className="text-2xl lg:text-3xl font-bold text-blue-600 mb-2">{stat.number}</div>
@@ -309,7 +309,7 @@ const FamAdda = () => {
               <ProductCard 
                 key={product.id} 
                 product={product} 
-                brand="famadda"
+                brand="famdda"
                 className="animate-slide-up hover:transform hover:scale-105 transition-all duration-300"
                 style={{ animationDelay: `${index * 0.1}s` }}
               />
@@ -379,7 +379,7 @@ const FamAdda = () => {
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Taste Authentic India?</h2>
           <p className="text-lg mb-6 text-blue-100 max-w-2xl mx-auto">
-            Join thousands of families who have made FamAdda their gateway to India's rich culinary heritage
+            Join thousands of families who have made Famdda their gateway to India's rich culinary heritage
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg text-sm">

@@ -244,9 +244,9 @@ const About = () => {
             Milk is not just another product it is part of every family's daily life. 
             <span className="font-semibold text-primary-600"> AmruthDhan ensures that what reaches your home is pure, safe, and exactly as nature intended.</span>
           </p>
-          <h1 className='font-semibold text-primary-500 text-lg'>FamAdda</h1>
+          <h1 className='font-semibold text-primary-500 text-lg'>Famdda</h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6 fade-in">
-            For regional specialties, <span className="font-semibold text-blue-600">FamAdda ensures that what you receive in your city tastes exactly as it does in the hometown where it was born.</span> 
+            For regional specialties, <span className="font-semibold text-blue-600">Famdda ensures that what you receive in your city tastes exactly as it does in the hometown where it was born.</span> 
             Same recipe. Same craftsmanship. Same heritage. Delivered with care, quality, and authenticity.
           </p>
         </div>
@@ -306,14 +306,14 @@ const About = () => {
               </ul>
             </div>
 
-            {/* FamAdda Brand */}
+            {/* Famdda Brand */}
             <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-500 fade-in group hover:-translate-y-2 animation-delay-300">
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
                   <i className="fas fa-utensils text-white text-2xl"></i>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-amber-700">FamAdda</h3>
+                  <h3 className="text-2xl font-bold text-amber-700">Famdda</h3>
                   <p className="text-amber-600 font-medium">India's Regional Flavours, Preserved to Perfection</p>
                 </div>
               </div>

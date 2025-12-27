@@ -19,7 +19,7 @@ const Home = () => {
       id: 2,
       name: "Rajesh Kumar",
       location: "Kurnool",
-      text: "FamAdda's regional delicacies are incredible! The Kolkata Rosogolla tastes exactly like I had in my last visit.",
+      text: "Famdda's regional delicacies are incredible! The Kolkata Rosogolla tastes exactly like I had in my last visit.",
       rating: 5,
       avatar: "RK"
     },
@@ -123,7 +123,7 @@ const regions = [
               
               <p className="text-lg lg:text-xl mb-8 text-primary-100 leading-relaxed">
                 Where <span className="font-semibold text-white">purity meets tradition</span>. Experience the gold standard of 
-                pure buffalo milk with AmruthDhan and discover India's rich culinary heritage with FamAdda
+                pure buffalo milk with AmruthDhan and discover India's rich culinary heritage with Famdda
                 delivered with love to your doorstep.
               </p>
               
@@ -132,8 +132,8 @@ const regions = [
                   <span className="relative z-10">Discover AmruthDhan</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-secondary-600 to-secondary-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
                 </Link>
-                <Link to="/famadda" className="bg-white text-primary-600 hover:bg-gray-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                  Explore FamAdda
+                <Link to="/famdda" className="bg-white text-primary-600 hover:bg-gray-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                  Explore Famdda
                 </Link>
               </div>
 
@@ -254,9 +254,9 @@ const regions = [
         </div>
         
         <div className="mb-6">
-          <h3 className="text-lg font-semibold text-secondary-500 mb-2">FamAdda</h3>
+          <h3 className="text-lg font-semibold text-secondary-500 mb-2">Famdda</h3>
           <p className="text-gray-600 leading-relaxed">
-            FamAdda celebrates India's diverse culinary heritage by bringing authentic regional specialties to your home. 
+            Famdda celebrates India's diverse culinary heritage by bringing authentic regional specialties to your home. 
             <span className="text-primary-500 font-semibold"> We ensure that what you receive in your city tastes exactly as it does in the hometown where it was born. Same recipe. Same craftsmanship. Same heritage. </span>
             We delivering each product with care, quality, and authenticity.
           </p>
@@ -392,7 +392,7 @@ const regions = [
         </div>
       </section>
 
-      {/* FamAdda Introduction */}
+      {/* Famdda Introduction */}
       <section className="section-padding bg-gradient-to-br from-secondary-50 to-white">
         <div className="container-custom">
           <div className="text-center mb-12 animate-fade-in">
@@ -400,10 +400,10 @@ const regions = [
               <span className="w-2 h-2 bg-secondary-600 rounded-full mr-2"></span>
               <span className="text-sm font-semibold">Authentic Regional Taste</span>
             </div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-3">FamAdda</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-3">Famdda</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              FamAdda is a celebration of India’s culinary heritage. Every region of our country carries a
-              unique food culture, perfected over generations. FamAdda brings these authentic regional
+              Famdda is a celebration of India’s culinary heritage. Every region of our country carries a
+              unique food culture, perfected over generations. Famdda brings these authentic regional
               delicacies directly to your doorstep, ensuring that you experience the true flavour, tradition,
               and craftsmanship of each state
             </p>
@@ -434,7 +434,7 @@ const regions = [
           </div>
 
           <div className="text-center">
-            <Link to="/famadda" className="btn-secondary text-sm px-6 py-2">
+            <Link to="/famdda" className="btn-secondary text-sm px-6 py-2">
               Explore All Regional Delicacies
             </Link>
           </div>
@@ -534,8 +534,8 @@ const regions = [
               <Link to="/amruthdhan" className="btn-secondary text-sm px-6 py-2">
                 Start with AmruthDhan
               </Link>
-              <Link to="/famadda" className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 text-sm">
-                Discover FamAdda
+              <Link to="/famdda" className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 text-sm">
+                Discover Famdda
               </Link>
             </div>
           </div>
