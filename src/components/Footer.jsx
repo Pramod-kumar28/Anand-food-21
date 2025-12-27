@@ -165,18 +165,12 @@ const Footer = () => {
                   {/* Branding Section */}
                   <div className="flex items-center space-x-1">
                     <div className="flex items-center space-x-1">
-                      <div className="w-14 h-14 rounded-full border-2 border-amber-200 overflow-hidden shadow-lg flex-shrink-0">
-                        <img
-                          src="/images/CEO.png"
-                          alt="Anand Foods Founder"
-                          className="w-full h-full object-cover object-top"
-                        />
-                      </div>
-                      <div className="w-12 h-12 flex-shrink-0 rounded-full overflow-hidden">
+                      
+                      <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-md flex-shrink-0">
                         <img
                           src="/images/logo.png"
                           alt="Anand Foods"
-                          className="w-full h-full object-contain"
+                          className="w-[70%] h-[70%] object-contain"
                         />
                       </div>
                     </div>
